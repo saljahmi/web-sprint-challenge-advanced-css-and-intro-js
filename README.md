@@ -23,9 +23,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Accesibility on the web depends on how accomodating the site is to all people, which includes those with disabilities who may use screen readers, or those who use mobile or tablet devices. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+A key feature of acessible sites is responsive design, which responds to changes in screen size because of the use of scalable units instead of fixed units, and the use of breakpoints.
+
+We would also want to include the most semantic html tags and descriptions on images, which is useful for people who use screen readers. 
+
+We could also include large clickable areas designed for people with limited fine motor skills. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable stores a value. That variable value can change if we reassign it with a new o]value. We can use the variables in expressions, and the expression will respond to whatever the current value held in the variable "container" is. 
+
 4. What is the purpose of using functions in code?
+
+Functions provide a set of instructions, and is used to perform a task within the program.  
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -55,7 +71,7 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
+* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment Amatched mobild stylesRIA roles)  
 * [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
 * [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
