@@ -262,13 +262,14 @@ console.log(get20s(artists));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(array, index) {
-    array.splice(index,1);
-    console.log(array.length);
-//    return array;
-}
+
+// function removeArtist(array, index) {
+//     array.splice(index,1);
+//     console.log(array.length);
+//     return array;
+// }
   
-removeArtist(artists, 0);
+// removeArtist(artists, 0);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -283,11 +284,22 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+const me = {
+  id: 20,
+  name: "Somayah Aljahmi",
+  years: "1994-2020",
+  genre: "Web Design",
+  nationality: "Yemen",
+  bio: "Somayah Aljahmi ['soʊ'meɪ'jʌ] was born in Yemen and currenty resides in Queens, NY. She is a teacher specialized in secondary math, and is now pursuing a career in web development.",  
+}
 
-    /* Code here */
+function addArtist(array, object){
+  array.push(object);
+  return array;
+}
 
-  }
+addArtist(artists, me);
+console.log(artists[20]);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -297,12 +309,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array){
+  let prolific = [];
+  for( i=0 ; i<array.length; i++ ){
+    if(array[i].paintings > 100){
+      prolific.push(array[i].name);
+    }
+  }
+  return prolific;
 }
 
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
